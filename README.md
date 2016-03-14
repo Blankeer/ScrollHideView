@@ -7,6 +7,21 @@ https://github.com/shamanland/floating-action-button
 
 # 使用
 ```
+Step 1. Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+Step 2. Add the dependency
+	dependencies {
+	        compile 'com.github.Blankeer:ScrollHideView:V0.1'
+	}
+```
+
+```
 <com.blanke.lib.scrollholdview.ScrollHideView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
