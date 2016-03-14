@@ -1,3 +1,10 @@
+# 参考
+https://github.com/shamanland/floating-action-button
+
+#截图
+![image](https://raw.githubusercontent.com/Blankeer/ScrollHideView/master/image.gif)
+
+
 # 使用
 ```
 <com.blanke.lib.scrollholdview.ScrollHideView
