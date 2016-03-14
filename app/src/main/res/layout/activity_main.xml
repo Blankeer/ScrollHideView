@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fab"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|right"
+        android:src="@android:drawable/ic_dialog_dialer"
+        app:rippleColor="@color/colorPrimary" />
+
+    <com.blanke.lib.scrollholdview.ScrollHideView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        app:animIn="@anim/in"
+        android:id="@+id/hideView"
+        app:animOut="@anim/out"
+        app:targetView="@id/recyclerview">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="this is a test TextView!"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </com.blanke.lib.scrollholdview.ScrollHideView>
+
+</RelativeLayout>
