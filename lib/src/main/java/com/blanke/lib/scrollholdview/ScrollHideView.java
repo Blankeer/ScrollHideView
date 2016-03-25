@@ -27,14 +27,9 @@ public class ScrollHideView extends FrameLayout {
     }
 
     public ScrollHideView(Context context, AttributeSet attrs, int defStyleAttr) {
-        this(context, attrs, defStyleAttr, 0);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public ScrollHideView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
+        super(context, attrs, defStyleAttr);
         final TypedArray a = context.obtainStyledAttributes(
-                attrs, R.styleable.ScrollHideView, defStyleAttr, defStyleRes);
+                attrs, R.styleable.ScrollHideView, defStyleAttr, 0);
         animInRes = a.getResourceId(R.styleable.ScrollHideView_animIn, 0);
         animOutRes = a.getResourceId(R.styleable.ScrollHideView_animOut, 0);
         targetViewRes = a.getResourceId(R.styleable.ScrollHideView_targetView, 0);
